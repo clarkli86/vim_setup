@@ -22,3 +22,17 @@ wget https://raw.githubusercontent.com/clarkli86/vimrc/master/vimrc.local
 sudo cp vimrc.local /etc/vim/
 sudo cp vimrc.local /etc/vim/gvimrc.local
 rm vimrc.local
+
+# Configure git
+git config --global core.editor vim
+git config --global user.name "Clark Li"
+git config --global user.email "clark.li@minelab.com.au"
+
+# Install tmux
+sudo apt-get install tmux
+
+# Install on-my-zsh
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+
+# Change on-my-zsh theme to random
+sed 's/ZSH_THEME=.*/ZSH_THEME=random/g' ~/.zshrc > ~/.zshrc
