@@ -19,9 +19,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Get vimrc.local
 wget https://raw.githubusercontent.com/clarkli86/vimrc/master/vimrc.local
-sudo cp vimrc.local /etc/vim/
-sudo cp vimrc.local /etc/vim/gvimrc.local
-rm vimrc.local
+cp vimrc.local ~/.vimrc
 
 # Configure git
 git config --global core.editor vim
