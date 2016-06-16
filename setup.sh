@@ -24,10 +24,13 @@ cp vimrc.local ~/.vimrc
 # Configure git
 git config --global core.editor vim
 git config --global user.name "Clark Li"
-git config --global user.email "clark.li@minelab.com.au"
+git config --global user.email "clark.li86@gmail.com"
 
 # Install tmux
 sudo apt-get install tmux
+
+# Install zsh
+sudo apt-get install zsh
 
 # Install on-my-zsh
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
