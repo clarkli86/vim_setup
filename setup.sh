@@ -37,4 +37,4 @@ wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - 
 
 # Change on-my-zsh theme to random
 # sed 's/ZSH_THEME=.*/ZSH_THEME=random/g' ~/.zshrc > ~/.zshrc
-echo 'command_not_found_handler() {/usr/lib/command-not-found "$1"}' > ~/.zshrc
+echo 'command_not_found_handler() {/usr/lib/command-not-found "$1"}' >> ~/.zshrc
