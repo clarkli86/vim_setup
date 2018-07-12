@@ -5,6 +5,7 @@ mkdir -p ~/.vim/colors
 wget -O ~/.vim/colors/desert256.vim https://raw.githubusercontent.com/clarkli86/desert256.vim/master/colors/desert256.vim
 
 # Install cscope plugin
+sudo apt install cscope
 mkdir -p ~/.vim/plugin
 wget -O ~/.vim/plugin/cscope_maps.vim http://cscope.sourceforge.net/cscope_maps.vim
 
