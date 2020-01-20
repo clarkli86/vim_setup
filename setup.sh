@@ -21,11 +21,15 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Get vimrc.local
 wget https://raw.githubusercontent.com/clarkli86/vimrc/master/vimrc.local
 cp vimrc.local ~/.vimrc
+cp vimrc.local ~/.gvimrc
 
 # Configure git
 git config --global core.editor vim
 git config --global user.name "Clark Li"
 git config --global user.email "clark.li86@gmail.com"
+
+# Install vim
+sudo apt-get install vim vim-gtk
 
 # Install tmux
 sudo apt-get install tmux
