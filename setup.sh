@@ -1,9 +1,11 @@
 #!/bin/sh
 
+# Deprecated by gruvbox
 # Install desert256
 mkdir -p ~/.vim/colors
 wget -O ~/.vim/colors/desert256.vim https://raw.githubusercontent.com/clarkli86/desert256.vim/master/colors/desert256.vim
 
+# Deprecated by the usage of vim-lsp's LspReferences which is smarter
 # Install cscope plugin
 sudo apt install cscope -y
 mkdir -p ~/.vim/plugin
@@ -17,11 +19,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 wget https://raw.githubusercontent.com/clarkli86/vimrc/master/vimrc.local
 cp vimrc.local ~/.vimrc
 cp vimrc.local ~/.gvimrc
+mkdir -p ~/.config/nvim/
+cp vimrc.local ~/.config/nvim/init.vim
 
 # Configure git
-git config --global core.editor vim
-git config --global user.name "Clark Li"
-git config --global user.email "clark.li86@gmail.com"
+git config --global core.editor nvim
 
 # Install vim
 sudo apt-get install vim vim-gtk
