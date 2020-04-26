@@ -14,6 +14,7 @@ wget -O ~/.vim/plugin/cscope_maps.vim http://cscope.sourceforge.net/cscope_maps.
 # Install vim-plug
 sudo apt install curl -y
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Get vimrc.local
 wget https://raw.githubusercontent.com/clarkli86/vimrc/master/vimrc.local
